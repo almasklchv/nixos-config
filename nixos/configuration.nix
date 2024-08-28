@@ -13,7 +13,7 @@
 
   networking.hostName = "nixos"; # Define your hostname.
 
-  time.timeZone = "Asia/Tashkent"; # Set your time zone.
+  time.timeZone = "Asia/Almaty"; # Set your time zone.
 
   i18n.defaultLocale = "en_US.UTF-8"; # Select internationalisation properties.
 
