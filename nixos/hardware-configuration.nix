@@ -33,5 +33,14 @@
   # networking.interfaces.wlp1s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+
+  hardware = {
+    # Opengl
+    opengl.enable = true;
+
+    # Most wayland compositors need this
+    nvidia.modesetting.enable = true;
+  };
+
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
